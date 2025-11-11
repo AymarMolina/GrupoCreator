@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img src="header.png" alt="" [routerLink]="['/home']" style="cursor: pointer;" id="img">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class='bx bx-menu'></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item" style="cursor: pointer;" [ngClass]="{'active': activeLink === 'inicio'}" (click)="setActive('inicio'); toinicio(); closeNavbar()">
+                    <a class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item" style="cursor: pointer;" [ngClass]="{'active': activeLink === 'nosotros'}" (click)="setActive('nosotros'); tonosotros(); closeNavbar()">
+                    <a class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item" style="cursor: pointer;" [ngClass]="{'active': activeLink === 'emprendedor'}" (click)="setActive('emprendedor'); soyemprendedor(); closeNavbar()">
+                    <a class="nav-link">Soy emprendedor</a>
+                </li>
+                <li class="nav-item" style="cursor: pointer;" [ngClass]="{'active': activeLink === 'servicios'}" (click)="setActive('servicios'); servicios(); closeNavbar()">
+                    <a class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item" style="cursor: pointer;" [ngClass]="{'active': activeLink === 'contacto'}" (click)="setActive('contacto'); toform(); closeNavbar()">
+                    <a class="nav-link" id="contacto">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="etiquetas2">
+
+        <a [ngClass]="{'active': sharedService.Eti1}" (click)="llamarEti(1)">
+            <div class="svg-container">
+                <img class="svg-active" src="diseñoactivo.svg" alt="">
+                <img class="svg-inactive" src="diseñoinactivo.svg" alt="">
+            </div>
+            <span>Diseño UX/UI</span>
+        </a>
+
+        <a [ngClass]="{'active': sharedService.Eti2}" (click)="llamarEti(2)">
+            <div class="svg-container">
+                <img class="svg-active" src="filmactivo.svg" alt="">
+                <img class="svg-inactive" src="filmdesactivo.svg" alt="">
+            </div>
+            Filmmaker
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti3}" (click)="llamarEti(3)">
+            <div class="svg-container">
+                <img class="svg-active" src="socialactivo.svg" alt="">
+                <img class="svg-inactive" src="socialdesactivo.svg" alt="">
+            </div>
+            Social Media
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti4}" (click)="llamarEti(4)">
+            <div class="svg-container">
+                <img class="svg-active" src="branactivo.svg" alt="">
+                <img class="svg-inactive" src="braninactivo.svg" alt="">
+            </div>
+            Branding
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti5}" (click)="llamarEti(5)">
+            <div class="svg-container">
+                <img class="svg-active" src="googleactivo.svg" alt="">
+                <img class="svg-inactive" src="googleianctivo.svg" alt="">
+            </div>
+            Google Ads
+        </a>
+
+    </div>
+    <div class="container-fluid" id="pru">
+        <div class="contenido2 apa">
+            <app-diseno></app-diseno>
+        </div>
+        <div class="contenido2">
+            <app-filmmaker></app-filmmaker>
+        </div>
+        <div class="contenido2">
+            <app-socialmedia></app-socialmedia>
+        </div>
+        <div class="contenido2">
+            <app-branding></app-branding>
+        </div>
+        <div class="contenido2">
+            <app-google></app-google>
+        </div>
+    </div>
+</div>

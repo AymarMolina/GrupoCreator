@@ -1,0 +1,60 @@
+#contacto {
+    border: solid white 2px;
+    padding: 1px 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+li a {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.nav-item.active .nav-link {
+    color: black;
+}
+.nav-item{
+    margin-right: 40px;
+}
+
+.navbar {
+    background-color: #12BF9E !important;
+}
+
+#img {
+   width: 290px;
+    width: 320px;
+}
+#navbarSupportedContent{
+    margin-left: -20%;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler .bx {
+    font-size: 1.5rem;
+    color: white;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+@media (max-width: 991px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+
+    #img {
+        width: 140px;
+    }
+    #navbarSupportedContent{
+        margin-left: 0;
+       
+    }
+}

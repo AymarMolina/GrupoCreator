@@ -1,0 +1,23 @@
+<div id="section" >
+    <div class="serv">
+        <h1>Nuestros Servicios</h1>      
+    </div>
+    <div class="container-fluid">
+        <div class="etiquetas1">
+            <a [ngClass]="{'active': sharedService.Eti1Serv}" (click)="llamarEti(1)" >Marketing Digital</a>
+            <a [ngClass]="{'active': sharedService.Eti2Serv}" (click)="llamarEti(2)" >Audiovisuales</a>
+            <a [ngClass]="{'active': sharedService.Eti3Serv}" (click)="llamarEti(3)" >Workshops</a>
+          </div>
+        <div class="container-fluid">
+            <div *ngIf="sharedService.Eti1Serv">
+                <app-marketing-digital></app-marketing-digital>
+            </div>
+            <div *ngIf="sharedService.Eti2Serv">
+                <app-audiovisuales></app-audiovisuales>
+            </div>
+            <div *ngIf="sharedService.Eti3Serv">
+                <app-workshop></app-workshop>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="etiquetas4">
+        <a [ngClass]="{'active': sharedService.Eti1}" (click)="llamarEti(1)">
+            <div class="svg-container">
+                <img class="svg-active" src="graactivo.svg" alt="">
+                <img class="svg-inactive" src="gradesactivo.svg" alt="">
+            </div>Grabación de Eventos
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti2}" (click)="llamarEti(2)">
+            <div class="svg-container">
+                <img class="svg-active" src="dronactivo.svg" alt="">
+                <img class="svg-inactive" src="droninactivo.svg" alt="">
+            </div>Dron para Eventos
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti3}" (click)="llamarEti(3)">
+            <div class="svg-container">
+                <img class="svg-active" src="reporactivo.svg" alt="">
+                <img class="svg-inactive" src="reporinactivo.svg" alt="">
+            </div>Reportero Corporativo
+        </a>
+
+    </div>
+    <div class="container-fluid">
+        <div class="contenido3 apa">
+            <app-grabacion></app-grabacion>
+        </div>
+        <div class="contenido3">
+            <app-dron></app-dron>
+        </div>
+        <div class="contenido3">
+            <app-corporativo></app-corporativo>
+        </div>
+    </div>
+</div>

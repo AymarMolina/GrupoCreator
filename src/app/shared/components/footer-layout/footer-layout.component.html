@@ -1,0 +1,110 @@
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container col-lg-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 foo text-center">
+                        <div class="logo">
+                            <div class="imagelogo">
+                                <img src="header.png" alt="img">
+                            </div>
+                            <div class="container">
+                                <h6>
+                                    Tu aliado estratégico en el mundo del marketing digital y la creación de contenidos.
+                                </h6>
+                            </div>
+                            <br>
+                            <div class="iconos">
+                                <div class="social-icons">
+                                    <img class="social-icon" src="insta.svg" alt=""
+                                        (click)="openUrl('https://www.instagram.com/grupomontercreator/?hl=es')">
+                                    <img class="social-icon" src="linkedin.svg" alt=""
+                                        (click)="openUrl('https://www.linkedin.com/company/grupomontercreator/')">
+                                    <img class="social-icon" src="Facebook.svg" alt=""
+                                        (click)="openUrl('https://web.facebook.com/profile.php?id=61559736840486&locale=es_LA&_rdc=1&_rdr')">
+                                    <img class="social-icon" src="tiktok.svg" alt=""
+                                        (click)="openUrl('https://www.tiktok.com/@grupomontercreator')">
+                                    <img class="social-icon" src="ws.svg" alt=""
+                                        (click)="openUrl('https://api.whatsapp.com/send?phone=+51940358107&text=Hola%20Grupo%20Monter,%20espero%20se%20encuentren%20bien.%20Estoy%20interesado%20en%20sus%20servicios%20y%20me%20gustaría%20obtener%20más%20información.%20¿Podrían%20ayudarme%20con%20esto?%20¡Gracias!')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 about">
+                        <div class="about-container">
+                            <div class="contact">
+                                <h4 class="servi">MENÚ</h4>
+                                <ul class="custom-list">
+                                    <li>
+                                        <a (click)="scrollToTop()" (click)="tonosotros()">Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a (click)="scrollToTop()" (click)="toservicio()">Servicios</a>
+                                    </li>
+                                    <li>
+                                        <a (click)="scrollToTop()" (click)="tometodologia()">Metodología</a>
+                                    </li>
+                                    <li>
+                                        <a (click)="scrollToTop()" (click)="toform()">Contáctanos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 about ">
+                        <div class="services-container">
+                            <h4 (click)="servi(1)">Marketing Digital</h4>
+                            <ul class="custom-list">
+                                <li>
+                                    <a (click)="llamarEti(1,1)">UX/UI Design</a>
+                                </li>
+                                <li>
+                                    <a (click)="llamarEti(2,1)">Filmaker</a>
+                                </li>
+                                <li>
+                                    <a (click)="llamarEti(3,1)">Social Media</a>
+                                </li>
+                                <li>
+                                    <a (click)="llamarEti(4,1)">Branding </a>
+                                </li>
+                                <li>
+                                    <a (click)="llamarEti(5,1)">Google Ads</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 about ">
+                        <div class="services-container">
+                            <h4 (click)="servi(2)">Audiovisuales</h4>
+                            <ul class="custom-list" id="audio">
+                                <li>
+                                    <a (click)="llamarEti(1,2)">Grabación de Eventos</a>
+                                </li>
+                                <li>
+                                    <a (click)="llamarEti(2,2)">Dron para Eventos</a>
+                                </li>
+                                <li>
+                                    <a (click)="llamarEti(3,2)">Reportero Corporativo</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 about">
+                        <div (click)="servi(3)" class="services-container">
+                            <h4>Workshops</h4>
+                            <ul class="custom-list">
+                                <li>
+                                    <a (click)="llamarEti(4,3)">Workshops</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="ultimo">
+    Copyright © 2024 Con el respaldo de <a href="https://grupomonter.com/inicio" target="_blank">Grupo Monter</a>
+</footer>

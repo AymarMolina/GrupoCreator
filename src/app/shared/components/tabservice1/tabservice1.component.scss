@@ -1,0 +1,259 @@
+.seccion {
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    position: relative;
+
+
+}
+
+#image {
+    width: 70px;
+}
+#izquierdo{
+    margin-left: 15px;
+}
+.hero-section .hero {
+    max-width: calc(42% - 10px);
+    margin-left: 5rem;
+    color: #fff;
+    opacity: 1;
+}
+
+.titulo {
+    margin-left: -20%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    color: #FDFDFD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+h5 {
+    color: #FDFDFD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+p {
+    color: #FDFDFD;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.todo {
+    padding-top: 10%;
+}
+
+.additional-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    width: 90%;
+    margin-left: -3%;
+    margin-right: auto;
+}
+
+.imagemonter {
+    margin-bottom: 20px;
+}
+
+.img img {
+    width: 500px;
+    background-repeat: no-repeat;
+}
+
+.content-item {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-item-inner {
+    display: flex;
+    align-items: center;
+}
+
+.content-item img {
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.content-item div {
+    flex: 1;
+}
+
+.hero-section .img img {
+    max-width: 100%;
+    margin-right: 0;
+}
+
+@keyframes buttonAnimall {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.button-animatingall {
+    animation: buttonAnimall 0.5s ease forwards;
+}
+
+@media screen and (max-width: 1023px) {
+    .additional-content {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .todo {
+        width: 100%;
+        padding: 0;
+    }
+
+    .titulo {
+        margin-left: 0;
+
+    }
+
+    .content-item {
+        max-width: 100%;
+    }
+
+    #image {
+        width: 100px;
+    }
+
+    #imagenabout {
+        width: 75%;
+        margin-left: 2rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        width: 75%;
+        height: auto;
+    }
+
+    .hero-section .hero {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0.5rem;
+
+    }
+
+    .hero-section .img {
+        max-width: 70%;
+        margin-left: 0;
+        order: -1;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 2px;
+        padding-top: 10%;
+
+
+    }
+
+    p {
+        font-size: 13px;
+        padding: 22px;
+
+    }
+
+    h5 {
+        text-align: start;
+        font-size: 9px;
+    }
+
+    .content-item img {
+        max-width: 100%;
+        margin-right: 5px;
+    }
+
+    .content-item {
+        margin-right: 5px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    #image {
+        width: 40px;
+    }
+
+    h5 {
+        text-align: start;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        width: 75%;
+        height: auto;
+    }
+    h5 {
+        
+        font-size: 8px;
+    }
+    p {
+        
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 40px;
+    }
+    #izquierdo{
+        margin-left: 25px;
+    }
+    #image {
+        width: 28px;
+    }
+
+}

@@ -1,0 +1,161 @@
+.container-fluid {
+  min-height: 250px;
+  padding: 0;
+  position: relative;
+}
+
+.etiquetas3 {
+  display: flex;
+  max-width: 250px;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  color: white;
+  z-index: 2;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  min-height: 59px;
+  text-align: end;
+  color: white;
+  padding: 0.5rem 0.6rem;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a .svg-container {
+  display: flex;
+  align-items: center;
+}
+
+.svg-active {
+  display: none;
+}
+
+.svg-inactive {
+  display: block;
+}
+
+a.active .svg-active {
+  display: block;
+}
+
+a.active .svg-inactive {
+  display: none;
+}
+
+a.active {
+  background-color: white;
+  opacity: 1;
+  color: black;
+}
+
+.contenido1 {
+  position: relative;
+  display: none;
+  z-index: 1;
+}
+
+.apa {
+  display: block !important;
+}
+
+@keyframes buttonAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-animating {
+  animation: buttonAnim 0.7s ease forwards;
+}
+
+@keyframes buttonAnimL {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-animatingL {
+  animation: buttonAnimL 0.7s ease forwards;
+}
+@media screen and (max-width: 1300px) {
+  .etiquetas3 {
+      display: flex;
+      min-width: 160px;
+      max-width: 160px;
+      justify-content: center;
+      position: absolute;
+      flex-direction: column;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      color: white;
+      z-index: 2;
+  }
+
+  a {
+      padding: 5px 5px;
+      font-size: 16px;
+      min-height: 30px;
+  }
+
+  .svg-inactive,
+  .svg-active {
+      width: 25px;
+      margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .etiquetas3 {
+    display: flex;
+    max-width: 110px;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    color: white;
+    z-index: 2;
+  }
+  .svg-container{
+    margin-right: 15px;
+  }
+  a {
+    font-size: 10px;
+    min-height: 30px;
+  }
+
+  .svg-inactive,
+  .svg-active {
+    width: 18px;
+  }
+}

@@ -1,0 +1,73 @@
+image: node:20
+
+# This is the stages / task to perfom in jobs
+stages:
+  - build
+  - deploy dev
+  - deploy qa
+  - deploy prod
+
+# caching for reuse
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  # - node_modules/
+  - dist/
+
+# This command is run before the execution of stages
+before_script:
+  - npm install
+
+# Job One for making build
+build:
+  # when: manual
+  stage: build
+  script:
+    - npm run dev
+  # only: ['develop']
+  only:
+    - develop
+    - qa
+    - prod
+
+# Job Two for deploy build to S3
+deploy dev:
+  image: python:latest
+  stage: deploy dev
+  # when: manual
+  before_script:
+    - pip install awscli
+  script:
+    - aws s3 sync ./dist/grupo-monter-creator-pw-frontend/browser $AWS_S3_BUCKET_CREATOR --delete
+    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_CREATOR --paths "/*"
+  only: ['develop']
+
+
+# Job Two for deploy build to S3
+deploy qa:
+  image: python:latest
+  stage: deploy qa
+  # when: manual
+  before_script:
+    - pip install awscli
+  script:
+    - aws --version
+    - aws s3 sync ./dist/grupo-monter-creator-pw-frontend/browser $AWS_S3_BUCKET_CREATOR --delete
+    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_CREATOR --paths "/*"
+  only: ['qa']
+
+
+# Job Two for deploy build to S3
+deploy prod:
+  image: python:latest
+  stage: deploy prod
+  # when: manual
+  before_script:
+    - pip install awscli
+  script:
+    - aws --version
+    - echo $AWS_S3_BUCKET_CREATOR_PROD
+    - echo $DISTRIBUTION_ID_CREATOR_PROD
+    - aws s3 sync ./dist/grupo-monter-creator-pw-frontend/browser $AWS_S3_BUCKET_CREATOR_PROD --delete --debug
+    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_CREATOR_PROD --paths "/*"
+  only: ['prod']

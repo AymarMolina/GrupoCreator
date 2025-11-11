@@ -1,0 +1,51 @@
+<div class="seccion" [style.background-image]="'url(' + backgroundImage + ')'">
+    <div class="titulo">
+        <h2 class="text-center">{{ title }}</h2>
+    </div>
+    <section class="hero-section">
+        <div class="img" data-aos="fade-right">
+            <img [src]="mainImage" id="imagenabout">
+        </div>
+        <div class="hero">
+            <p data-aos="fade-down">{{ mainText }}</p>
+            <div class="todo">
+                <section class="additional-content">
+                    <div class="content-item" data-aos="fade-right">
+                        <div class="content-item-inner">
+                            <img [src]="contentItem1Image" alt="" id="image">
+                            <div>
+                                <h5>{{ contentItem1Text }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item" data-aos="fade-left" id="izquierdo">
+                        <div class="content-item-inner">
+                            <img [src]="contentItem2Image" alt="" id="image">
+                            <div>
+                                <h5>{{ contentItem2Text }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="additional-content">
+                    <div class="content-item" data-aos="fade-right">
+                        <div class="content-item-inner">
+                            <img [src]="contentItem3Image" alt="" id="image">
+                            <div>
+                                <h5>{{ contentItem3Text }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item" data-aos="fade-left" id="izquierdo">
+                        <div class="content-item-inner">
+                            <img [src]="contentItem4Image" alt="" id="image">
+                            <div>
+                                <h5>{{ contentItem4Text }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>

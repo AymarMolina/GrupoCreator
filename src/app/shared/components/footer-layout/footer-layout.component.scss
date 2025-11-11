@@ -1,0 +1,184 @@
+.footer {
+    background-color: #02554A;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    transform: translateX(-15%);
+}
+
+.imagelogo {
+    text-align: center;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagelogo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#wsp {
+    width: 50px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.iconos {
+    margin-left: 70px;
+}
+
+.social-icon:last-child {
+    margin-right: 0;
+}
+
+
+a:hover {
+    cursor: pointer;
+}
+
+h4,
+a {
+    color: #FFF !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+h6 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 90px;
+}
+
+.about {
+    padding-top: 2%;
+}
+
+.about ul,
+.services-container ul,
+.contact-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.custom-list li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: #F9F5EF;
+}
+
+@media (max-width: 992px) {
+    .about {
+        display: none;
+    }
+
+    .logo {
+        transform: translate(0);
+    }
+
+    #audio {
+        margin-left: 20px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .button-group {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        transform: translate(70%);
+    }
+
+    .col-lg-4 {
+        margin-bottom: 20px;
+    }
+
+    .col-lg-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .about,
+    .services-container,
+    .contact-container {
+        margin-right: 0;
+    }
+
+    h6 {
+        margin-left: 20px;
+    }
+
+    .foo {
+        margin-bottom: 50px;
+    }
+
+    .servi {
+        text-align: center;
+    }
+
+    .iconos {
+        margin-left: 0;
+    }
+
+    .imagelogo {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagelogo img {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.ultimo {
+    background-color: #12BF9E;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    
+}
+.ultimo a{
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    
+}

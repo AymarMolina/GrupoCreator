@@ -1,0 +1,118 @@
+.hero {
+    padding: 5% 0;
+    padding-bottom: 8%;
+    text-align: center;
+    background-color: #12BF9E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.highlight {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#flecha {
+    width: 100px;
+}
+
+.title  h1{
+    color: #373535;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 15%;
+    margin-bottom: 4rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.content img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.content p {
+    flex: 1;
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 44px;
+    }
+
+    .content p {
+        margin-left: 5%;
+        font-size: 12px;
+    }
+
+    #flecha {
+        margin-left: -5%;
+    }
+
+    .content {
+        text-align: center;
+
+        max-width: 100%;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+    #img {
+        width: 45px;
+    }
+
+    .content img {
+        margin-right: 0;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .highlight {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title h1 {
+        font-size: 20px;
+        margin-left: 3.5%;
+        margin-bottom: 10px;
+    }
+  }

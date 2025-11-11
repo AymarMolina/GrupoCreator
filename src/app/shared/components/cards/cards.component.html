@@ -1,0 +1,54 @@
+<section class="hero">
+    <h1>Conoce Nuestros Planes</h1>
+    <div class="row">
+        <div class="cartas">
+            <div class="card plan-basico" data-aos="fade-right">
+                <div class="card-body">
+                    <h4 class="card-title">Plan Básico</h4>
+                    <h2 class="card-title">Impulso</h2>
+                    <ul>
+                        <li>8 Publicaciones en redes sociales.</li>
+                        <li>Creación de calendario de contenidos.</li>
+                        <li>Copys estratégicos.</li>
+                        <li>Piezas gráficas.</li>
+                        <li>3 Reuniones virtuales o presenciales al mes.</li>
+                    </ul>
+                    <button class="btn contact" (click)="redirectToWhatsApp('Impulso')">Contactar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card plan-plus" id="large" data-aos="fade-down">
+                <div class="card-body">
+                    <img src="bookmark-star-fill.svg" alt="" class="card-icon">
+                    <h4 class="card-title">Plan Plus</h4>
+                    <h2 class="card-title">Crecimiento</h2>
+                    <ul>
+                        <li>10 Publicaciones en redes sociales.</li>
+                        <li>Creación de calendario de contenido.</li>
+                        <li>Copys estratégicos.</li>
+                        <li>Piezas gráficas.</li>
+                        <li>Grabaciones o sesión de fotos de negocio (3 min de video o 8 fotos).</li>
+                        <li>3 Reuniones virtuales o presenciales al mes.</li>
+                    </ul>
+                    <button class="btn contact" id="bt" (click)="redirectToWhatsApp('Crecimiento')">Contactar Ahora</button>
+                </div>
+            </div>
+
+            <div class="card plan-premium" data-aos="fade-left">
+                <div class="card-body">
+                    <h4 class="card-title">Plan Premiun</h4>
+                    <h2 class="card-title">Super Emprendedor</h2>
+                    <ul>
+                        <li>14 Publicaciones en redes sociales.</li>
+                        <li>Creación de calendario de contenido.</li>
+                        <li>Copys estratégicos.</li>
+                        <li>Piezas gráficas.</li>
+                        <li>Grabaciones o sesión de fotos de negocio (5 min de video o 12 fotos).</li>
+                        <li>3 Reuniones virtuales o presenciales al mes.</li>
+                    </ul>
+                    <button class="btn contact" (click)="redirectToWhatsApp('Super Emprendedor')">Contactar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

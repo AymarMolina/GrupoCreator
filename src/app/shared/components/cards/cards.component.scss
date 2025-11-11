@@ -1,0 +1,149 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #12BF9E;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card {
+    border-radius: 32px;
+    background-color: #003D35;
+    border: none;
+}
+
+h1 {
+    color: #F8F9FF;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+h4 {
+    color: #F8F9FF;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h2 {
+    color: #0FFFC2;
+    font-family: "Poppins";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+li {
+    color: #F8F9FF;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#large {
+    background-color: #02554A;
+}
+
+#contact {
+    color: white;
+}
+
+.btn {
+    border-radius: 15px;
+    background-color: #22BF97;
+    font-family: 'Poppins';
+    padding: 10px 10px;
+    font-weight: 600;
+    align-self:center;
+}
+
+#bt {
+    background-color: white;
+    color: #02554A;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icon {
+    width: 40px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+/* Styles for specific plans */
+.plan-basico {
+    width: 19rem;
+    height: 32rem;
+    margin-top: 50px;
+    padding-top: 45px;
+}
+
+.plan-plus {
+    width: 20rem;
+    height: 38rem;
+    padding-top: 5%;
+}
+
+.plan-premium {
+    width: 19rem;
+    height: 32rem;
+    margin-top: 50px;
+    padding-top: 3%;
+}
+
+@media (max-width: 900px) {
+    
+
+    .cartas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card { 
+        margin-top: 20px;
+    }
+
+    #large {
+        width: 18rem !important;
+    }
+
+    #large .card-body {
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

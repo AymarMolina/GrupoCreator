@@ -1,0 +1,66 @@
+<section class="form-section col-12" id="formulario">
+    <div class="row w-100">
+        <div class="col-12 col-md-6 image-container" data-aos="fade-right">
+            <img src="form.gif" alt="Imagen de ejemplo">
+        </div>
+        <div class="col-12 col-md-6 contact-form__wrapper p-5 ">
+            <h1>Envíanos un Mensaje</h1>
+            <form action="#" class="contact-form form-validate" novalidate="novalidate" [formGroup]="studentForm">
+                <div class="forms">
+                    <div class="row">
+                        <div class="col-md-5" data-aos="fade-right">
+                            <div class="mb-3">
+                                <label for="">Nombres</label>
+                                <input matInput type="text" class="form-control" formControlName="firstname"
+                                    placeholder="Ingrese su nombre" required>
+                                <small *ngIf="firstnameInvalidAndTouched" class="text-danger">Campo requerido</small>
+                            </div>
+                        </div>
+                        <div class="col-md-5"  data-aos="fade-left">
+                            <div class="mb-3">
+                                <label for="">Apellidos</label>
+                                <input matInput type="text" class="form-control" formControlName="lastname"
+                                    placeholder="Ingrese su apellido" required>
+                                <small *ngIf="lastnameInvalidAndTouched" class="text-danger">Campo requerido</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5" data-aos="fade-right">
+                            <div class="mb-3">
+                                <label for="">Correo</label>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Ingrese su correo"
+                                    formControlName="email" required>
+                                <small *ngIf="emailInvalidAndTouched" class="text-danger">Campo requerido</small>
+                            </div>
+                        </div>
+                        <div class="col-md-5"  data-aos="fade-left">
+                            <div class="mb-3">
+                                <label for="">Celular</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" formControlName="phone"
+                                    placeholder="Ingrese número" required>
+                                <small *ngIf="phoneInvalidAndTouched" class="text-danger">Campo requerido</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10" data-aos="flip-right">
+                            <div class="mb-4">
+                                <label for="">Mensaje</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje"
+                                    style="height: 200px" formControlName="message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-start" data-aos="fade-up">
+                            <button type="submit" name="submit" class="btn btn-primary" [disabled]="studentForm.invalid"
+                                (click)="submit(1)">Enviar<i class='bx bx-right-arrow-alt'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+       
+    </div>
+</section>

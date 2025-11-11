@@ -1,0 +1,168 @@
+.hero-section {
+    background-color: #12BF9E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    padding-bottom: 5%;
+}
+
+h2 {
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.img img {
+    width: 700px;
+}
+
+.redsocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+}
+
+.social-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redsocial a {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
+    background-color: #373535;
+    padding-right: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.redsocial i {
+    margin: 10px;
+}
+
+.redsocial a:hover i {
+    color: #12BF9E;
+}
+
+.wsp {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 90%;
+    transform: translateY(-50%);
+}
+
+.hero-section .hero {
+    max-width: calc(40% - 20px);
+    color: #fff;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .img img {
+    max-width: 100%;
+    margin-right: 0;
+}
+
+
+.btn {
+    background-color: #02554A;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.icon-container i {
+    color: white;
+    display: inline-block;
+    transform: rotate(-45deg) translateY(5px);
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+.overlay-images {
+    transform: translate(20%, -250%);
+}
+
+@media screen and (max-width: 1023px) {
+    #men {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        padding-top: 25%;
+
+    }
+
+    .hero {
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    .img {
+        order: -1;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: -5%;
+    }
+
+    .redsocial {
+        display: none;
+
+    }
+    p{
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .hero-section .hero {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-section .img {
+        max-width: 70%;
+        margin-left: 0;
+    }
+
+    .bold-black,
+    .bold-blue {
+        font-size: 36px;
+    }
+}

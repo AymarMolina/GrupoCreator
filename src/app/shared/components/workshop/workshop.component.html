@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="etiquetas3">
+        <a [ngClass]="{'active': sharedService.Eti1}" (click)="llamarEti(1)">
+            <div class="svg-container">
+                <img class="svg-active" src="ventaactivo.svg" alt="">
+                <img class="svg-inactive" src="ventainactivo.svg" alt="">
+            </div>Incremento de ventas
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti2}" (click)="llamarEti(2)">
+            <div class="svg-container">
+                <img class="svg-active" src="busactivo.svg" alt="">
+                <img class="svg-inactive" src="businactivo.svg" alt="">
+            </div>Posicionamiento en buscadores
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti3}" (click)="llamarEti(3)">
+            <div class="svg-container">
+                <img class="svg-active" src="digitalactivo.svg" alt="">
+                <img class="svg-inactive" src="digitalinactivo.svg" alt="">
+            </div>Marketing digital
+        </a>
+        <a [ngClass]="{'active': sharedService.Eti4}" (click)="llamarEti(4)">
+            <div class="svg-container">
+                <img class="svg-active" src="capactivo.svg" alt="">
+                <img class="svg-inactive" src="capinactivo.svg" alt="">
+            </div>Capacitaciones personalizadas
+        </a>
+    </div>
+    <div class="container-fluid"id="workback">
+        <div class="contenido1 apa">
+            <app-ventas></app-ventas>
+        </div>
+        <div class="contenido1">
+            <app-buscadores></app-buscadores>
+        </div>
+        <div  class="contenido1">
+            <app-digital></app-digital>
+        </div>
+        <div class="contenido1">
+            <app-personalizadas></app-personalizadas>
+        </div>
+    </div>
+</div>
